@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Control\Director;
+
 /**
  * Routines for IP to country resolution.
  * 
@@ -369,7 +371,7 @@ class Geoip
         if (!$codeOnly) {
             $name = substr($country, $start + 4);
             if (!$name) {
-                $name = $this->countryCode2name($code);
+                $name = self::countryCode2name($code);
             }
             
             return array('code' => $code, 'name' => $name);

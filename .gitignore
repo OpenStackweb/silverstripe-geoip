@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+/install-frameworkmissing.html
+/index.php
+/install.php
+/web.config
+/.htaccess
+/vendor/
